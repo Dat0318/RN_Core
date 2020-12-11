@@ -15,7 +15,7 @@ else
 react-native init $project_name --version $version
 fi
 cd "./$project_name"
-curl -o "./$project_name.zip" "http://103.48.83.137/src_custom_full.zip" --progress-bar
+curl -o "./$project_name.zip" "https://github.com/Dat0318/RN_Core/src_custom_full.zip" --progress-bar
 unzip "./src_custom_full.zip"
 mv src_custom_full src
 rm -rf "./src_custom_full.zip"
