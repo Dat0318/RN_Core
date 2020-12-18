@@ -4,6 +4,26 @@
 
 ## this is a core of a app and syntax to render a app auto all thing you want.
 
-curl https://github.com/Dat0318/RN_Core/src_custom_full.sh -o src_custom_full && sh rn_src_custom_full
+### auto create a project React Native with the same structure components:
 
-sh https://github.com/Dat0318/RN_Core/src_custom_full.sh
+<br>
+run init project from local computer:
+
+```
+sh create_RN_project_custom.sh
+
+```
+
+run init project from git hub repo full components:
+
+```
+sh rn_init.sh
+
+```
+
+run init project from server company use curl:
+
+```
+sh rn_core.sh
+
+```
