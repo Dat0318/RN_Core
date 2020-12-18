@@ -42,6 +42,7 @@ mv src/build_apk.sh ./
 mv src/jsconfig.json ./
 mv src/clean_android.sh ./
 mv src/babel.config.js ./
+mv src/react-native.config.js ./
 
 # init for git
 git init
