@@ -15,11 +15,19 @@ else
 react-native init $project_name --version $version
 fi
 cd "./$project_name"
-curl -o "./$project_name.zip" "https://github.com/Dat0318/RN_Core/src_custom_full.zip" --progress-bar
-unzip "./src_custom_full.zip"
-mv src_custom_full src
-rm -rf "./src_custom_full.zip"
-rm -rf "./App.js"
+git clone "https://github.com/Dat0318/RN_Core.git"
+cd "./RN_Core"
+mv "src" "../"
+cd ".."
+
+mv src/App.js ./
+mv src/init.sh ./
+mv src/build_apk.sh ./
+mv src/jsconfig.json ./
+mv src/clean_android.sh ./
+mv src/babel.config.js ./
+
+rm -rf "RN_Core"
 npm install react-native-reanimated react-native-gesture-handler react-native-screens react-native-safe-area-context @react-native-community/masked-view --save
 npm i axios mobx mobx-react react-native-i18n react-native-responsive-screen @react-native-community/async-storage --save
 npm i @react-navigation/material-top-tabs @react-native-firebase/app @react-native-firebase/messaging @react-native-community/datetimepicker --save
